@@ -1,0 +1,22 @@
+.method public hidebysig instance void  Method2() cil managed
+{
+  // Code size       31 (0x1f)
+  .maxstack  1
+  IL_0000:  ldarg.0
+  IL_0001:  ldfld      object LockVsMonitor.Class1::syncObject
+  IL_0006:  call       void [System.Threading]System.Threading.Monitor::Enter(object)
+  .try
+  {
+    IL_000b:  call       void [System.Console]System.Console::WriteLine()
+    IL_0010:  leave.s    IL_001e
+  }  // end .try
+  finally
+  {
+    IL_0012:  ldarg.0
+    IL_0013:  ldfld      object LockVsMonitor.Class1::syncObject
+    IL_0018:  call       void [System.Threading]System.Threading.Monitor::Exit(object)
+    IL_001d:  endfinally
+  }  // end handler
+  IL_001e:  ret
+} // end of method Class1::Method2
+
