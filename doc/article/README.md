@@ -19,7 +19,7 @@ lock (obj)
 
 But, what is under the hood of this `lock` statement? Is there something that is worth mentioning? Microsoft's documentation says that the `Monitor` class is actually used to obtain and release the lock. Is that true?
 
-This C# Pill is aims to answer the following question:
+This C# Pill is aiming to answer the following question:
 
 **Question**
 

@@ -8,7 +8,7 @@ Language (C#)
 
 **Concurrent access**
 
-When there are multiple threads that must access same resource, it is mandatory to use a synchronization mechanism, otherwise we may loos data or leave the resource in an inconsistent state.
+When there are multiple threads that must access the same resource, it is mandatory to use a synchronization mechanism, otherwise we may loos data or leave the resource in an inconsistent state.
 
 **The `lock` statement**
 
@@ -21,7 +21,7 @@ lock (obj)
 }
 ```
 
-But, what is under the hood of this `lock` statement? Is there something that is worth mentioning? Microsoft's documentation says that the `Monitor` class is used, under the hood, to obtain and release the lock. Is that true?
+But, what is there, under the hood of this `lock` statement? Is there something that is worth mentioning? Microsoft's documentation says that the `Monitor` class is used, under the hood, to obtain and release the lock. Is that true?
 
 This C# Pill is targeting to answer the following question.
 
