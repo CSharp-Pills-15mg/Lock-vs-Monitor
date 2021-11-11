@@ -25,7 +25,13 @@ But, what is there, under the hood of this `lock` statement? Is there something 
 
 This C# Pill is targeting to answer the following question.
 
-**Question**
+## Question
 
 - Is the `lock` statement just a syntactic sugar for the usage of `Monitor` class?
+
+## Donations
+
+> If you like my work and want to support me, you can buy me a coffee:
+>
+> [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y62EZ8H)
 
